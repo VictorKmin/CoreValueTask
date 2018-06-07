@@ -2,15 +2,13 @@ import java.util.ArrayList;
 
 public class Node {
 
-    //
     private int distanceFromSource = 999;
-    //
     private boolean visited;
     private ArrayList<Edge> edges = new ArrayList<Edge>();
 
     public int getDistanceFromSource() {
     return distanceFromSource;
-}
+    }
 
     public void setDistanceFromSource(int distanceFromSource) {
         this.distanceFromSource = distanceFromSource;
@@ -31,5 +29,4 @@ public class Node {
     public void setEdges(ArrayList<Edge> edges) {
         this.edges = edges;
     }
-
 }

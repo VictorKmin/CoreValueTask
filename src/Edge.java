@@ -1,13 +1,9 @@
 public class Edge {
 
-    // номер вершини з якої виходимо
     private int fromNodeIndex;
-    // номер вершини куди йдемо
     private int toNodeIndex;
-    //довжина шляху
     private int length;
 
-    //конструктор вершин
     public Edge(int fromNodeIndex, int toNodeIndex, int length) {
         this.fromNodeIndex = fromNodeIndex;
         this.toNodeIndex = toNodeIndex;
@@ -26,13 +22,11 @@ public class Edge {
         return length;
     }
 
-    // Визначає індекс сусіда
-    public int getNeighbourIndex(int nodeIndex) {
-        if (this.fromNodeIndex == nodeIndex) {
-            return this.toNodeIndex;
+    public int getNeighIndex(int nodeIndex) {
+        if (fromNodeIndex == nodeIndex) {
+            return toNodeIndex;
         } else {
-            return this.fromNodeIndex;
+            return fromNodeIndex;
         }
     }
-
 }
