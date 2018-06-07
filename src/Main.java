@@ -9,6 +9,7 @@ public class Main {
                 new Edge(1, 5, 2),
                 new Edge(1, 7, 3),
                 new Edge(2, 4, 2),
+                new Edge(3, 5, 5),
                 new Edge(4, 6, 5),
                 new Edge(5, 7, 1)
         };
